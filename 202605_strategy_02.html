@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>會談備忘錄｜接觸台科大兩位財金教授，為台大財金所申請鋪路</title>
+<style>
+  :root{
+    --navy:#1f3a5f;
+    --navy-soft:#2c4f7c;
+    --ink:#23252b;
+    --muted:#5d6470;
+    --bg:#f6f4ef;
+    --card:#ffffff;
+    --line:#e3ddd1;
+    --gold:#b6883a;
+    --gold-soft:#f3ead4;
+    --green:#2f7d4f;
+    --green-soft:#e6f1e8;
+    --red:#b1402f;
+    --red-soft:#f6e4e0;
+    --blue-soft:#e7eef6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.85;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px 90px;}
+
+  /* ---- Header ---- */
+  header{
+    background:linear-gradient(150deg,#1f3a5f 0%,#2c4f7c 100%);
+    color:#fff;padding:54px 22px 46px;text-align:center;
+  }
+  header .kicker{
+    font-size:13px;letter-spacing:3px;color:#c7d4e6;
+    text-transform:uppercase;margin-bottom:14px;
+  }
+  header h1{
+    font-size:27px;font-weight:700;line-height:1.5;
+    max-width:680px;margin:0 auto;
+  }
+  header .sub{
+    margin-top:16px;font-size:15px;color:#d4ddea;
+    max-width:620px;margin-left:auto;margin-right:auto;
+  }
+  header .meta{
+    margin-top:22px;font-size:13px;color:#9fb2cc;
+  }
+
+  /* ---- Section ---- */
+  section{margin-top:42px;}
+  .sec-head{
+    display:flex;align-items:center;gap:13px;margin-bottom:18px;
+  }
+  .sec-num{
+    flex:none;width:38px;height:38px;border-radius:50%;
+    background:var(--navy);color:#fff;font-weight:700;font-size:17px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .sec-head h2{
+    font-size:21px;font-weight:700;color:var(--navy);line-height:1.4;
+  }
+
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:13px;padding:26px 28px;margin-bottom:18px;
+  }
+  .card h3{
+    font-size:17px;color:var(--navy);font-weight:700;margin-bottom:10px;
+  }
+  .card h3.with-line{
+    border-bottom:2px solid var(--gold-soft);padding-bottom:8px;margin-bottom:14px;
+  }
+  p{margin-bottom:12px;}
+  p:last-child{margin-bottom:0;}
+  .muted{color:var(--muted);font-size:14.5px;}
+  strong{color:var(--navy);}
+  .hl{background:var(--gold-soft);padding:1px 5px;border-radius:4px;font-weight:600;color:#8a651f;}
+
+  ul{margin:8px 0 8px 4px;padding-left:20px;}
+  li{margin-bottom:8px;}
+  ul.tight li{margin-bottom:5px;}
+
+  /* ---- Overview box ---- */
+  .overview{
+    background:var(--navy);color:#eef2f8;border-radius:13px;
+    padding:28px 30px;margin-top:-30px;position:relative;
+    box-shadow:0 10px 30px rgba(31,58,95,.16);
+  }
+  .overview h3{color:#fff;font-size:16px;margin-bottom:14px;letter-spacing:1px;}
+  .flow{
+    display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;margin-top:6px;
+  }
+  .flow-step{
+    flex:1;min-width:150px;background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:14px 15px;
+  }
+  .flow-step .t{font-weight:700;color:#fff;font-size:15px;margin-bottom:4px;}
+  .flow-step .d{font-size:13px;color:#bcc9dc;line-height:1.6;}
+  .flow-arrow{
+    display:flex;align-items:center;color:#7e93b4;font-size:20px;font-weight:700;
+  }
+  .principle{
+    margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14);
+    font-size:14.5px;color:#cdd8e8;
+  }
+  .principle b{color:var(--gold);font-weight:700;}
+
+  /* ---- professor banner ---- */
+  .prof-banner{
+    display:flex;gap:16px;align-items:flex-start;
+    background:var(--blue-soft);border-radius:11px;padding:18px 20px;margin-bottom:18px;
+  }
+  .prof-badge{
+    flex:none;width:52px;height:52px;border-radius:50%;
+    background:var(--navy);color:#fff;font-size:20px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .prof-banner .info h3{margin:0;color:var(--navy);font-size:18px;}
+  .prof-banner .info .role{font-size:13.5px;color:var(--navy-soft);margin-top:3px;}
+  .prof-banner .info .field{font-size:13.5px;color:var(--muted);margin-top:5px;}
+
+  /* ---- goal list ---- */
+  .goals{counter-reset:g;list-style:none;padding:0;margin:6px 0;}
+  .goals li{
+    counter-increment:g;position:relative;padding-left:34px;margin-bottom:9px;
+  }
+  .goals li::before{
+    content:counter(g);position:absolute;left:0;top:1px;
+    width:23px;height:23px;border-radius:50%;
+    background:var(--gold);color:#fff;font-size:13px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  /* ---- script box ---- */
+  .script{
+    background:#fbf9f4;border-left:4px solid var(--gold);
+    border-radius:0 8px 8px 0;padding:14px 18px;margin:10px 0;
+    font-size:15px;color:#3a3d44;
+  }
+  .script .lbl{
+    font-size:12px;letter-spacing:1.5px;color:var(--gold);
+    font-weight:700;text-transform:uppercase;margin-bottom:6px;display:block;
+  }
+  .script em{color:var(--muted);font-style:normal;font-size:13.5px;}
+
+  /* ---- bridge ---- */
+  .bridge{
+    border:1px solid var(--line);border-radius:12px;margin-bottom:16px;overflow:hidden;
+  }
+  .bridge-head{
+    background:var(--green-soft);padding:14px 20px;display:flex;gap:12px;align-items:center;
+  }
+  .bridge-no{
+    flex:none;width:30px;height:30px;border-radius:7px;background:var(--green);
+    color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px;
+  }
+  .bridge-head .bt{font-weight:700;color:#1f5a38;font-size:16px;}
+  .bridge-body{padding:16px 20px 18px;}
+  .bridge-body .row{margin-bottom:10px;}
+  .bridge-body .row:last-child{margin-bottom:0;}
+  .bridge-body .tag{
+    display:inline-block;font-size:12px;font-weight:700;color:#fff;
+    background:var(--navy-soft);border-radius:5px;padding:1px 8px;margin-right:7px;
+  }
+  .bridge-body .tag.use{background:var(--green);}
+  .bridge-body .tag.warn{background:var(--red);}
+
+  /* ---- do / dont ---- */
+  .dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.dd-grid{grid-template-columns:1fr;}}
+  .dd{border-radius:11px;padding:18px 20px;}
+  .dd.do{background:var(--green-soft);border:1px solid #cfe4d6;}
+  .dd.dont{background:var(--red-soft);border:1px solid #eccfc8;}
+  .dd h3{font-size:15px;margin-bottom:10px;}
+  .dd.do h3{color:#1f5a38;}
+  .dd.dont h3{color:#8e3324;}
+  .dd ul{padding-left:18px;margin:0;}
+  .dd li{font-size:14.5px;margin-bottom:7px;}
+
+  /* ---- checklist ---- */
+  .check{list-style:none;padding:0;margin:6px 0;}
+  .check li{
+    display:flex;gap:12px;align-items:flex-start;
+    padding:13px 16px;background:#fbf9f4;border:1px solid var(--line);
+    border-radius:9px;margin-bottom:9px;
+  }
+  .check .box{
+    flex:none;width:21px;height:21px;border:2px solid var(--gold);
+    border-radius:5px;margin-top:2px;
+  }
+  .check .txt{flex:1;}
+  .check .txt .when{
+    font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.5px;
+  }
+  .check .txt .what{font-size:15px;color:var(--ink);margin-top:2px;}
+
+  /* ---- reframe callout ---- */
+  .callout{
+    background:var(--gold-soft);border:1px solid #e6d4a6;border-radius:12px;
+    padding:22px 26px;margin-bottom:18px;
+  }
+  .callout .ct{
+    font-weight:700;color:#8a651f;font-size:16px;margin-bottom:8px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .callout p{color:#5b4a22;}
+  .callout strong{color:#7a5a1c;}
+
+  footer{
+    text-align:center;margin-top:50px;padding-top:24px;
+    border-top:1px solid var(--line);font-size:13px;color:var(--muted);
+  }
+  @media print{
+    body{background:#fff;}
+    .overview{box-shadow:none;}
+    section{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="kicker">NTU Finance · 推薦人脈布局</div>
+  <h1>會談備忘錄：接觸台科大兩位財金教授，<br>為台大財金所申請鋪路</h1>
+  <p class="sub">如何先接觸張琬喻教授、再接觸繆維中教授，跨越研究領域差異，讓兩位老師真正願意、也知道怎麼幫你。</p>
+  <p class="meta">對象：陳奕嘉｜目標：台大財金所 2026 年 9 月推甄｜製作日期：2026-05-25</p>
+</header>
+
+<div class="wrap">
+
+  <!-- ===== Overview ===== -->
+  <div class="overview">
+    <h3>一頁總覽</h3>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="t">① 張琬喻 教授</div>
+        <div class="d">台科大財金。你修過她的行為財務學，關係已暖。先談你的決心，請她引介繆維中。</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="t">② 繆維中 教授</div>
+        <div class="d">台科大財金、台大財金兼任。帶葉峻賓＋張琬喻雙重引薦登門，請教申請與面試。</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="t">③ 台大財金所</div>
+        <div class="d">兩位老師認識你、信任你之後，自然成為你申請路上的內部助力。</div>
+      </div>
+    </div>
+    <div class="principle">
+      貫穿兩場會談的一條紅線 ——
+      <b>少談自己的成功，多展現你的「可受教」</b>。這正是 2024 年國企所失敗的反向操作：
+      把六年資料科學與家族投資定位成「需要被磨的原料」，而不是「炫耀的成品」。
+    </div>
+  </div>
+
+  <!-- ===== Section 1 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">1</div>
+      <h2>為什麼是這個順序：先張琬喻，再繆維中</h2>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">張琬喻：你的「暖關係」與天然引介者</h3>
+      <ul class="tight">
+        <li>她<strong>教過你</strong>——上學期的行為財務學，你課堂表現優異、常分享家族投資觀點，老師已對你有正面印象。這是一段現成、溫度夠的關係，不需要從零建立信任。</li>
+        <li>行為財務學<strong>跟你的方向有真實重疊</strong>（家族成員的投資決策行為），所以這場談話本身就有實質，不會空泛。</li>
+        <li>她和繆維中是<strong>同系同事</strong>，由她引介繆維中是最自然、最不突兀的路徑。</li>
+        <li>先在「低風險、她已信任你」的場合，把你的新故事（離開科管所、重申台大財金）講順——等於替繆維中那場做一次彩排。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">繆維中：台大財金「內部人」與關鍵助力</h3>
+      <ul class="tight">
+        <li>他在<strong>台大財金兼任</strong>——他對台大財金推甄看重什麼、面試怎麼進行，有第一手視角。</li>
+        <li>他若推你，是在替自己兼任的系所找好學生，<strong>利害關係天然一致</strong>，不需要你刻意說服。</li>
+        <li>登門時你會有<strong>雙重背書</strong>：葉峻賓老師（你的指導教授、台大國企所博士）＋張琬喻老師。雙重引薦本身就是強力的可信度。</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <div class="ct">◆ 先解除你最大的擔心</div>
+      <p>你提到繆維中的專長是財務工程、衍生性商品定價，跟你想做的家族信託／投資管理「領域不太相同」——
+      <strong>這其實沒有你想的那麼嚴重。</strong></p>
+      <p>因為<strong>你不是要當繆維中的指導學生</strong>。他在這盤棋裡的角色是「引薦人／台大財金內部人」，不是你的目標指導教授。
+      他要評估的不是「這個學生的研究題目跟我一不一樣」，而是「<strong>這個學生認不認真、有沒有能力、可不可受教，值不值得我替他背書</strong>」。</p>
+      <p>所以你的任務<strong>不是證明研究方向吻合</strong>，而是：(1) 讓談話有實質、(2) 讓他感受你尊重他的專業、(3) 讓他看見一個值得信任的人。第 4 節的「三座橋樑」就是用來達成 (1) 和 (2)。</p>
+    </div>
+  </section>
+
+  <!-- ===== Section 2: 張琬喻 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">2</div>
+      <h2>第一場：與張琬喻教授會談</h2>
+    </div>
+
+    <div class="prof-banner">
+      <div class="prof-badge">張</div>
+      <div class="info">
+        <h3>張琬喻 教授</h3>
+        <div class="role">角色：知你的人 · 天然引介者 · 潛在推薦人</div>
+        <div class="field">連結點：行為財務學（你修過課）· 委托書業者 EMBA 演講</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>這場會談要達成的三件事</h3>
+      <ol class="goals">
+        <li>讓她知道你<strong>重新申請台大財金所的堅定決心</strong>，並理解這是深思熟慮、不是衝動。</li>
+        <li>連結她的行為財務學課程，讓她感受到你<strong>真的吸收了</strong>她教的東西。</li>
+        <li>請她<strong>引介繆維中教授</strong>，讓你下週那場談得更順。</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">開場：怎麼談「離開科管所」這件敏感事</h3>
+      <p>你現在還是台科大科管所的學生，卻要跟台科大的老師說你想離開——這要講得有風度。三個關鍵：</p>
+      <ul class="tight">
+        <li><strong>正向框架，不貶低科管所。</strong>不要說科管所哪裡不好，而是說你「更確定」自己的志向。</li>
+        <li><strong>先講指導教授葉峻賓老師已知情並支持。</strong>這一句能立刻解除任何「忠誠度」的尷尬——你不是偷偷摸摸，是你的指導教授親自建議的。</li>
+        <li><strong>把「修了她的課」變成決心的一部分。</strong>對張琬喻來說，這是真誠的肯定，不是奉承。</li>
+      </ul>
+      <div class="script">
+        <span class="lbl">開場白參考</span>
+        「老師，謝謝您願意撥空。這學期我做了一個重要決定——我想離開科管所，重新申請台大財金所。
+        我的指導教授葉峻賓老師知道，也支持我、還建議我來找您聊。
+        其實修了您上學期的行為財務學之後，我更確定財務金融才是我真正想走的路。」
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">連結她的課：用她真實的教材，不要空泛稱讚</h3>
+      <p>你提供的三份教材，讓這場談話可以從「老師的課很棒」升級成<strong>只有真的上過、真的吸收了才講得出來</strong>的具體內容。四個談話要點，從最強的開始：</p>
+
+      <div class="script">
+        <span class="lbl">要點 A · 王牌：老師自己的論文〈The Sobering Up Effect〉</span>
+        你那份 seminar 投影片的論文，作者 <strong>Jang, Woan-yuh 就是張琬喻老師本人</strong>——這是她發表在 <em>Journal of Behavioral Finance</em>（2020）的研究。論文講「清醒效應」：賣方分析師越接近盈餘宣告日、預測就越不樂觀，並用 2000–2017 年台股資料驗證。<br>
+        <em>→ 怎麼用：會談前把這篇讀懂。跟老師說，這篇研究改變了你解讀賣方分析師預測的方式——家族做長期投資時，你會特別留意分析師早期預測裡的系統性樂觀偏誤。這是你能做的最有力的一件事：證明你讀進去的是「她的研究」，不只是「她的課」。</em>
+      </div>
+
+      <div class="script">
+        <span class="lbl">要點 B · 行為財務學「有限意志／自我控制」單元</span>
+        課本第十章談「有限意志」——明知在股市追高危險、卻還是為之的自我控制難題。<br>
+        <em>→ 怎麼用：點出你家族「不擴張信用槓桿」的家規，本質上就是行為財務學講的「承諾機制／刺激控制」——用制度先把自己綁住，預防有限意志的失靈。你的家族治理，其實就是應用行為財務學。</em>
+      </div>
+
+      <div class="script">
+        <span class="lbl">要點 C · 公司治理單元——家族企業與家族治理</span>
+        老師的公司治理教材涵蓋家族企業、「家族治理 vs 企業治理」兩個面向、金字塔結構／交叉持股／控制權與現金流量權偏離、股權質押，甚至引用了 PwC 的全球家族企業調查。<br>
+        <em>→ 怎麼用：直說這個單元給了你描述「家族在做的事」的學術語言，它跟你引用的 PwC《家族守護者》、跟你想在台大財金研究的家族信託與家族投資管理是同一條線。（教材裡的「公司生命週期·成熟期」也與 PwC 的家族財富成熟期框架呼應。）</em>
+      </div>
+
+      <div class="script">
+        <span class="lbl">要點 D · 委托書業者 EMBA 演講</span>
+        那場演講讓你看見台灣股東會生態、委托書徵求與股東行動主義的真實樣貌。<br>
+        <em>→ 怎麼用：接到公司治理單元——這是「課堂理論」遇上「實務現場」，跟家族長期持股、家族在被投資公司的治理參與直接相關。</em>
+      </div>
+
+      <p class="muted">效果：四個要點全部錨定在她真實的教材與研究上。她會清楚感受到——你不是來客套的，你把她教的東西真的用進了你的思考。這對一位老師來說，是最有份量的尊重。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">你的研究方向：講得簡潔、講出重疊</h3>
+      <p>用一兩句話講清楚你去台大財金要做什麼：<span class="hl">家族信託、家族投資管理（family office 思維）、CFC 稅制下的家族資產重組</span>。</p>
+      <p>然後<strong>主動點出重疊</strong>：行為財務學其實就是你研究方向裡真實的一塊——家族的投資決策行為。這讓她覺得「我教的東西對這個學生是有用的」，她會更願意挺你。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">收尾：怎麼開口請她引介繆維中</h3>
+      <p><strong>主要請求</strong>——請她引介繆維中。同系同事，這個請求很自然，她多半會樂意。</p>
+      <div class="script">
+        <span class="lbl">請求引介參考</span>
+        「葉老師也建議我去找繆維中老師聊聊，因為繆老師在台大財金兼任。
+        不曉得方不方便請老師也幫我跟繆老師提一聲、引介一下？有您和葉老師的介紹，我想這場談話會順利很多。」
+      </div>
+      <p><strong>關於推薦信——這次不主動開口。</strong>你這次的策略是「先建立關係，推薦信看情況」。先讓她重新認識「現在的你」。
+      如果談話順利、她主動表達支持與肯定，你再順勢輕輕帶一句、留個伏筆即可：</p>
+      <div class="script">
+        <span class="lbl">推薦信伏筆（僅在她主動表達支持時才用）</span>
+        「之後申請文件如果需要推薦，不知道是否有機會再請老師指點、甚至協助？我會把資料準備齊全再來請教您。」
+        <em>→ 重點是「留伏筆」，不是「逼她當場答應」。讀現場氣氛，氣氛不到就不講。</em>
+      </div>
+    </div>
+
+    <div class="dd-grid">
+      <div class="dd do">
+        <h3>◎ 這場要帶的東西</h3>
+        <ul>
+          <li><strong>會談前重讀老師的〈The Sobering Up Effect〉論文</strong>，準備一兩個你真的想請教的問題。</li>
+          <li>一頁<strong>研究方向摘要</strong>（家族信託／家族投資管理），讓她一眼看懂你要做什麼。</li>
+          <li>你重新申請的<strong>時程表</strong>（9 月推甄），展現你已在認真執行。</li>
+          <li>（可選）2024 檢討的一兩句重點——主動講你從失敗學到什麼，展現成熟度。</li>
+        </ul>
+      </div>
+      <div class="dd dont">
+        <h3>✕ 這場要避免</h3>
+        <ul>
+          <li>不要貶低科管所或台科大。</li>
+          <li>不要一坐下就要推薦信——先讓關係回溫。</li>
+          <li>不要只稱讚「老師的課很棒」卻講不出具體內容。</li>
+          <li>不要把這場談成單向請託——也聽聽她的建議。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Section 3: 繆維中 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">3</div>
+      <h2>第二場：與繆維中教授會談</h2>
+    </div>
+
+    <div class="prof-banner">
+      <div class="prof-badge">繆</div>
+      <div class="info">
+        <h3>繆維中 教授</h3>
+        <div class="role">角色：台大財金兼任 · 內部視角 · 關鍵助力</div>
+        <div class="field">專長：財務工程、衍生性商品定價、風險管理、隨機過程、計量經濟</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>這場會談要達成的三件事</h3>
+      <ol class="goals">
+        <li>帶著<strong>雙重引薦</strong>（葉峻賓＋張琬喻）登門，讓繆維中認識你這個人。</li>
+        <li><strong>誠實</strong>說明領域差異，但用「三座橋樑」讓談話有實質、展現你尊重他的專業。</li>
+        <li>請教他：<strong>台大財金推甄看重什麼、申請書與面試該怎麼準備</strong>。</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">開場：第一句就點出引薦來源</h3>
+      <p>初次見面，最有效的開場就是把<strong>引薦鏈</strong>講清楚——這比你自我介紹任何成就都更快建立可信度。</p>
+      <div class="script">
+        <span class="lbl">開場白參考</span>
+        「繆老師您好，我是葉峻賓老師的學生陳奕嘉。葉老師建議我來找您聊聊，張琬喻老師也要我來向您請教。
+        葉老師是台大國企所博士、吳學良老師指導的。我正在準備重新申請台大財金所，知道您在台大財金兼任，
+        很希望能聽聽您的看法。」
+      </div>
+      <p class="muted">這段話在 15 秒內傳達了：你有兩位老師背書、學術網絡是真的、你的目標明確、你是來「請教」的。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="with-line">誠實面對領域差異——不要假裝</h3>
+      <p>繆維中是量化財務工程的專家，一眼就能看穿包裝。<strong>主動、坦白地把領域差異講出來</strong>，反而會贏得他的尊重。</p>
+      <div class="script">
+        <span class="lbl">坦白領域差異參考</span>
+        「老師的專長是財務工程跟衍生性商品定價，我未來在台大財金想做的偏向家族信託跟投資管理，
+        領域不完全一樣。但我想先讓老師認識我這個人，也很想請教老師對申請的看法。」
+      </div>
+      <p>講完這句之後，再用下一節的「三座橋樑」把談話接回有實質的內容——這時候的橋樑就不是硬湊，而是誠實基礎上的真實連結。</p>
+    </div>
+
+    <div class="callout">
+      <div class="ct">◆ 要準備多少繆維中的研究方向？</div>
+      <p><strong>要準備，但有清楚的界線。</strong>這個拿捏很關鍵。</p>
+      <p>準備他的研究，<strong>不是為了製造研究吻合</strong>，而是為了三件事：(1) 你才問得出有水準的問題——「請教」的姿態需要基本理解撐著；(2) 他談到自己的研究時，你接得住、回應得上；(3) 真誠的尊重需要實質，光靠客套撐不起一場談話。</p>
+      <p><strong>夠用的深度：</strong>知道他的大方向（財務工程、衍生性商品定價、風險管理、隨機過程、計量經濟）、能講出一個具體的教學或研究細節（例如下方的「等公車」Poisson Process）、準備好 2–3 個你真的好奇的問題。</p>
+      <p><strong>不需要做的：</strong>把他每一篇論文讀完、假裝你想做他的題目、或在他身上花太多力氣、反而冷落了你自己的故事。</p>
+      <p>一句話——他是<strong>引薦人</strong>，不是你的目標指導教授。你要的是「對話有水準＋真誠尊重」的深度，不是「我想當你學生」的深度。</p>
+    </div>
+  </section>
+
+  <!-- ===== Section 4: 三座橋樑 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">4</div>
+      <h2>三座橋樑：跨越領域差異的真實連結</h2>
+    </div>
+    <p class="muted" style="margin-bottom:16px;">
+      這三座橋的目的不是「證明你跟繆維中研究一樣」，而是讓談話有實質、讓他感受到你對他的專業有真誠的根與尊重。三座橋全部都是<strong>事實</strong>，不是話術。
+    </p>
+
+    <div class="bridge">
+      <div class="bridge-head">
+        <div class="bridge-no">1</div>
+        <div class="bt">你的程式與量化起點，就是財務工程</div>
+      </div>
+      <div class="bridge-body">
+        <div class="row">你是國貿系出身，會開始學程式，正是因為從<strong>選擇權計算</strong>入門——從 Black-Scholes，進階到 Ito Process、蒙地卡羅模擬法，才開始學 VBA、Python。<strong>這就是繆維中的本行。</strong></div>
+        <div class="row"><span class="tag use">怎麼用</span>當作你「為什麼懂量化」的起源故事自然帶出。一句話就讓他知道：這個學生跟我說同一種語言、對量化金融有真實的根。它還順勢解釋了你後來的路——台積電大數據競賽進準決賽 → 機器學習 → 中研院台灣人工智慧學校 → 2018 年 GPU 深度學習 → 六年資料科學工程師。</div>
+        <div class="row"><span class="tag">效果</span>這不是奉承，是事實。對一位財務工程教授來說，「我的起點是選擇權定價」是最有說服力的破冰。</div>
+      </div>
+    </div>
+
+    <div class="bridge">
+      <div class="bridge-head">
+        <div class="bridge-no">2</div>
+        <div class="bt">家族的可轉債資產交換（CB Asset Swap）</div>
+      </div>
+      <div class="bridge-body">
+        <div class="row">家族有透過詢價團購參與的<strong>可轉債資產交換</strong>。可轉債本身內含一個選擇權（轉換權）；CB asset swap 把債券（固定收益）部分與股權選擇權部分拆開——這 genuinely 落在繆維中的領域：衍生性商品定價、結構型商品。</div>
+        <div class="row"><span class="tag use">怎麼用</span>用「<strong>請教</strong>」的姿態，不是「報告」的姿態。問他：可轉債內含選擇權怎麼定價？asset swap spread 怎麼看？信用風險怎麼評估？讓他當專家。<strong>這正是 2024 年失敗的反面——謙虛、好奇、把教授當值得學習的對象。</strong></div>
+        <div class="row"><span class="tag warn">界線</span>同時誠實說清楚範圍：家族家規<strong>不做信用擴張槓桿</strong>，所以你不會碰選擇權做槓桿；CB asset swap 是少數沾到他領域的家族投資項目。把界線講清楚，比假裝你什麼都做更可信。</div>
+      </div>
+    </div>
+
+    <div class="bridge">
+      <div class="bridge-head">
+        <div class="bridge-no">3</div>
+        <div class="bt">風險管理，就是家族信託的本質</div>
+      </div>
+      <div class="bridge-body">
+        <div class="row">繆維中的專長涵蓋<strong>風險管理</strong>。而家族信託、家族投資管理、「不擴張信用槓桿」的家規——本質上<strong>就是一套風險管理哲學</strong>：跨代風險、資產集中度風險、流動性風險、稅務風險。</div>
+        <div class="row"><span class="tag use">怎麼用</span>把你的家族投資哲學，用「風險管理」的語言重新講一次。讓繆維中看到：你的 family office 興趣，跟他的量化風險視角其實是相通的——你只是把風險管理放在「家族跨代資產」這個尺度上。</div>
+        <div class="row"><span class="tag">效果</span>這座橋讓他明白：就算你研究的不是衍生性商品，他教的「風險」這個核心觀念，仍然是你研究的底層骨架。他的專業對你不是「無關」，而是「地基」。</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:6px;border-color:#e6d4a6;background:#fdfbf5;">
+      <h3 class="with-line">★ 加分細節：他用「等公車」教 Poisson Process</h3>
+      <p>繆維中在隨機過程課，會用「等公車」這個比喻來解釋 Poisson Process。這是一個<strong>展現你做了功課、而且做得有深度</strong>的好素材。</p>
+      <p>你查到的那篇數學文章（黃文璋〈和光同塵〉，《數學傳播》），背後其實是有名的<strong>「等待時間詭論」（waiting time paradox）</strong>：就算公車到站的間距服從指數分佈、平均是 1/λ，你實際的期望等待時間卻是 1/λ，而不是直覺以為的「平均間距的一半」——因為你隨機抵達時，更容易落在一段比較長的間距裡。</p>
+      <div class="script">
+        <span class="lbl">怎麼用 · 誠實版</span>
+        「我知道老師在隨機過程課用『等公車』講 Poisson Process，我覺得這個比喻很精彩，特地去查了背後的數學，發現『等待時間詭論』很有意思——直覺會錯，要靠機率才看得清楚。」
+        <em>→ 誠實表明你是「特地去查的」、不假裝上過課，反而更顯主動。</em>
+      </div>
+      <div class="script">
+        <span class="lbl">可選的延伸 · 輕輕帶，不要硬講</span>
+        可轉債詢價團購這類投資機會，本質上就是隨機到達的事件流；而指數分佈的「無記憶性」也呼應一件事——過去等了多久，不會讓下一個好機會更快出現。這跟家族投資強調的紀律與耐心，其實是相通的。
+      </div>
+      <p class="muted">界線：這是「加分細節」，點到為止就好——不是要你變成隨機過程專家。它的價值在於「你連他的教學比喻都去追究了」，這份用心，老師會記得。</p>
+    </div>
+
+    <div class="card" style="margin-top:6px;">
+      <h3 class="with-line">收尾：請教，而不是請託</h3>
+      <p>這場<strong>不開口要推薦信</strong>（初次見面、策略是先建立關係）。把收尾變成「請教」：</p>
+      <div class="script">
+        <span class="lbl">收尾請教參考</span>
+        「想請教老師——台大財金所推甄最看重哪些東西？面試大概會問什麼方向？
+        以我的背景，申請書裡老師覺得我應該特別強調、或特別小心什麼？」
+      </div>
+      <p>如果談得好、繆維中主動表示願意幫忙，你再順勢回應、表達感謝即可。<strong>讓「幫忙」是他主動給的，而不是你逼出來的。</strong></p>
+    </div>
+
+    <div class="dd-grid">
+      <div class="dd do">
+        <h3>◎ 這場要帶的東西</h3>
+        <ul>
+          <li>同一份<strong>研究方向摘要</strong>（家族信託／投資管理）。</li>
+          <li>你的 <strong>CV／履歷</strong>，方便他快速掌握你的背景。</li>
+          <li>一頁 <strong>CB asset swap 的簡單說明</strong>，方便你向他請教時有個具體素材。</li>
+        </ul>
+      </div>
+      <div class="dd dont">
+        <h3>✕ 這場要避免</h3>
+        <ul>
+          <li>不要假裝你的研究跟財務工程吻合。</li>
+          <li>不要第一次見面就開口要推薦信。</li>
+          <li>不要炫耀家族投資的成功、或六年資歷的「強大」。</li>
+          <li>不要把繆維中當「工具」——要建立真實的關係。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Section 5: 共同原則 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">5</div>
+      <h2>兩場會談共同的原則：2024 失敗教訓的應用</h2>
+    </div>
+
+    <div class="card">
+      <p>2024 年國企所失敗的核心問題是：太強調自己的成功、把自己講得太「滿」，讓教授感覺這不是一個「會受教」的學生。
+      這兩場會談是<strong>當面、即時</strong>的版本——同樣的錯，當面犯會更致命。把以下五點當成貫穿兩場的紀律：</p>
+      <ul>
+        <li><strong>聽多於說。</strong>2024 你說太多自己。這次反過來——多問問題，讓老師多講。一場好的會談，老師講的時間應該不少於你。</li>
+        <li><strong>把經驗定位成「原料」，不是「成品」。</strong>六年資料科學、家族投資，是需要台大財金的訓練來精煉的 raw material，不是已經完成的成就。語氣上的差別，老師聽得出來。</li>
+        <li><strong>讓教授覺得被尊重為專家。</strong>多用「想請教老師」「老師怎麼看」。把舞台留給他們。</li>
+        <li><strong>具體說出你從他們身上學到什麼。</strong>對張琬喻講行為財務學的具體收穫，對繆維中講你向他請教 CB 定價。具體 = 真誠。</li>
+        <li><strong>誠實大於包裝。</strong>領域不一樣就說不一樣；家規不做槓桿就說不做。真誠的人，老師才敢替他背書。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Section 6: 時程 ===== -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-num">6</div>
+      <h2>時程與行動清單</h2>
+    </div>
+
+    <ul class="check">
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">本週內</div>
+          <div class="what">寄信或趁 office hour 聯絡張琬喻教授，約時間。信中簡述「想跟老師聊聊重新申請台大財金所的決定」。</div>
+        </div>
+      </li>
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">會談前</div>
+          <div class="what">準備好一頁研究方向摘要、申請時程表；先把「離開科管所」的正向說法練順。</div>
+        </div>
+      </li>
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">張琬喻會談中／會談後</div>
+          <div class="what">當場或會後，請張琬喻引介繆維中教授（請她代為提一聲）。</div>
+        </div>
+      </li>
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">聯絡繆維中</div>
+          <div class="what">寫信給繆維中時，<strong>第一句就同時點出葉峻賓與張琬喻</strong>兩位老師的引介。</div>
+        </div>
+      </li>
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">下週</div>
+          <div class="what">與繆維中教授會談。帶 CV、研究方向摘要、CB asset swap 說明；用三座橋樑＋請教姿態。</div>
+        </div>
+      </li>
+      <li>
+        <div class="box"></div>
+        <div class="txt">
+          <div class="when">兩場會談後</div>
+          <div class="what">各寄一封簡短的感謝信，提一個會談中讓你最有收穫的點（讓老師記得你）。</div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="callout" style="margin-top:8px;">
+      <div class="ct">◆ 最後一個提醒</div>
+      <p>你問「怎麼更能貼切讓老師能夠幫助我」。最貼切的做法，<strong>不是去製造研究領域的吻合</strong>，而是：
+      用真實的連結點展現你對他們專業的尊重、把你自己的方向講得清楚而堅定、並且成為一個讓老師「願意替他說話、也覺得驕傲」的學生。</p>
+      <p>老師幫的是<strong>他相信的人</strong>，不是研究題目剛好一樣的人。把這兩場談成「讓他們相信你」，幫助自然會來。</p>
+    </div>
+  </section>
+
+  <footer>
+    會談備忘錄 · 台大財金所申請推薦人脈布局 · 2026-05-25<br>
+    供陳奕嘉會談前複習使用
+  </footer>
+
+</div>
+</body>
+</html>
